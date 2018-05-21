@@ -1,4 +1,9 @@
 import React, {Component} from 'react';
+import moment from 'moment';
+import { SingleDatePicker } from 'react-dates';
+import 'react-dates/lib/css/_datepicker.css';
+
+const now = moment();
 
 class ExpenseForm extends Component {
     constructor(props) {
@@ -7,7 +12,10 @@ class ExpenseForm extends Component {
         this.state = {
             description: '',
             note: '',
-            amount: ''
+            amount: '',
+            createdAt: moment(),
+            focused: false,
+            error: '',
         }
     }
 
@@ -23,15 +31,37 @@ class ExpenseForm extends Component {
 
     onAmountChange(e){
         const amount = e.target.value;
-        if (amount.match(/^\d*(\.\d{0,2})?$/)){
+        if (!amount || amount.match(/^\d{1,}(\.\d{0,2})?$/)){
             this.setState(() => ({ amount }))
+        }
+    }
+
+    onDateChange(createdAt){
+        if (createdAt) {
+            this.setState(() => ({ createdAt }))
+        }
+    }
+
+    onFocusChange({ focused }){
+        this.setState(() =>({ focused }))
+    }
+
+    onSubmit(e){
+        e.preventDefault();
+
+        if (!this.state.description || !this.state.amount){
+            this.setState(() => ({ error: 'Please fill the description and amount' }))
+        } else {
+            this.setState(() => ({ error: '' }));
+            console.log('submit')
         }
     }
 
     render() {
         return (
             <div>
-                <form>
+                {this.state.error && <p>{this.state.error}</p>}
+                <form onSubmit={this.onSubmit.bind(this)}>
                     <label>Add Expense</label>
                     <input
                         type="text"
@@ -44,6 +74,14 @@ class ExpenseForm extends Component {
                         placeholder="Amount"
                         value={this.state.amount}
                         onChange={this.onAmountChange.bind(this)}
+                    />
+                    <SingleDatePicker
+                        date={this.state.createdAt}
+                        onDateChange={this.onDateChange.bind(this)}
+                        focused={this.state.focused}
+                        onFocusChange={this.onFocusChange.bind(this)}
+                        numberOfMonths={1}
+                        isOutsideRange={() => false}
                     />
                     <textarea
                         placeholder="Add note (optional)"
