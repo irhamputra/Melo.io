@@ -6,7 +6,8 @@ class ExpenseForm extends Component {
 
         this.state = {
             description: '',
-            note: ''
+            note: '',
+            amount: ''
         }
     }
 
@@ -20,6 +21,13 @@ class ExpenseForm extends Component {
         this.setState(() => ({ note }))
     }
 
+    onAmountChange(e){
+        const amount = e.target.value;
+        if (amount.match(/^\d*(\.\d{0,2})?$/)){
+            this.setState(() => ({ amount }))
+        }
+    }
+
     render() {
         return (
             <div>
@@ -31,7 +39,12 @@ class ExpenseForm extends Component {
                         value={this.state.description}
                         onChange={this.onDescriptionChange.bind(this)}
                         autoFocus/>
-                    <input type="number" placeholder="Amount"/>
+                    <input
+                        type="text"
+                        placeholder="Amount"
+                        value={this.state.amount}
+                        onChange={this.onAmountChange.bind(this)}
+                    />
                     <textarea
                         placeholder="Add note (optional)"
                         value={this.state.note}
