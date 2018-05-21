@@ -1,19 +1,40 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import { connect } from 'react-redux';
+import ExpenseForm from './ExpenseForm';
+import { editExpense } from "../actions/expenses";
 
-export default class EditExpensePage extends Component {
+class EditExpensePage extends Component {
     constructor(props){
         super(props)
     }
 
     render(){
+        console.log(this.props);
         return(
             <div>
                 <Header/>
-                <h1>Edit Expense Page - {this.props.match.params.id}</h1>
+                <h1>Edit Expense Page - {this.props.expenses.description}</h1>
+                <ExpenseForm
+                    expense={this.props.expenses}
+                    onSubmit={(expense) => {
+                        this.props.dispatch(editExpense(this.props.expenses.id, expense));
+                        this.props.history.push('/')
+                    }}
+                />
                 <Footer/>
             </div>
         )
     }
 }
+
+const mapStateToProps = (state, props) => {
+    return{
+        expenses: state.expenses.find((expense) => {
+            return expense.id === props.match.params.id;
+        })
+    }
+};
+
+export default connect(mapStateToProps)(EditExpensePage)
