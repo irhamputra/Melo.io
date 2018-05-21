@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import ExpenseForm from './ExpenseForm';
+import { connect } from 'react-redux';
+import { addExpense } from "../actions/expenses";
 
-export default class AddExpensePage extends Component {
+class AddExpensePage extends Component {
     constructor(props){
         super(props);
     }
@@ -13,9 +15,16 @@ export default class AddExpensePage extends Component {
             <div>
                 <Header/>
                 <h1>Add Expense Page</h1>
-                <ExpenseForm/>
+                <ExpenseForm
+                    onSubmit={(expense) => {
+                        this.props.dispatch(addExpense(expense));
+                        this.props.history.push('/')
+                    }}
+                />
                 <Footer/>
             </div>
         )
     }
 }
+
+export default connect()(AddExpensePage)
