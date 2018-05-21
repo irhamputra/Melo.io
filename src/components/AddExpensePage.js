@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import ExpenseForm from './ExpenseForm';
 
 export default class AddExpensePage extends Component {
     constructor(props){
@@ -12,7 +13,7 @@ export default class AddExpensePage extends Component {
             <div>
                 <Header/>
                 <h1>Add Expense Page</h1>
-                <p>Body text</p>
+                <ExpenseForm/>
                 <Footer/>
             </div>
         )
