@@ -14,7 +14,7 @@ class AddExpensePage extends Component {
         return(
             <div>
                 <Header/>
-                <h1>Add Expense Page</h1>
+                <h1>Create an Invoice</h1>
                 <ExpenseForm
                     onSubmit={(expense) => {
                         this.props.dispatch(addExpense(expense));

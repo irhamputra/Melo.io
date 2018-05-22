@@ -15,7 +15,7 @@ class EditExpensePage extends Component {
         return(
             <div>
                 <Header/>
-                <h1>Edit Expense Page - {this.props.expenses.description}</h1>
+                <h1>Edit Invoice - {this.props.expenses.description}</h1>
                 <ExpenseForm
                     expense={this.props.expenses}
                     onSubmit={(expense) => {

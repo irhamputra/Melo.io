@@ -15,9 +15,9 @@ import getVisibleExpenses from './selectors/expenses';
 
 const store = configStore();
 
-store.dispatch(addExpense({ description: 'Water Bill', amount: 4500}));
-store.dispatch(addExpense({ description: 'Rent', amount: 400, createdAt: 1000}));
-store.dispatch(addExpense({ description: 'Gas Bill'}));
+// mock data. TODO: connect to Databases and remove mock data
+store.dispatch(addExpense({ description: 'Spotify', amount: 900, createdAt: 1526949601009 }));
+store.dispatch(addExpense({ description: 'Pay Rent', amount: 400, createdAt: 1526949582329}));
 store.dispatch(setTextFilter());
 
 const state = store.getState();

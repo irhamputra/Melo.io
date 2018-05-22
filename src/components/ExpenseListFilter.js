@@ -29,7 +29,9 @@ class ExpenseListFilter extends Component{
                     value={this.props.filters.text}
                     onChange={(e) => {
                         this.props.dispatch(setTextFilter(e.target.value))
-                    }}/>
+                    }}
+                    placeholder="Search a list..."
+                />
                 <select
                     value={this.props.filters.sortBy}
                     onChange={(e) => {
