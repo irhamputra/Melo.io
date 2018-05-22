@@ -1,7 +1,7 @@
-<h1 align="center">Melo.io</h1>
+<h1 align="center">Melo.io 📝💶</h1>
 <br/>
 
 
-Creating your financial data without a tears.
+<p align="center">Creating your financial data without a tears.</p>
 
-My coding challenge during Ramadan 2018
+demo is coming soon!
