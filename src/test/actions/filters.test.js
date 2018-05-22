@@ -30,11 +30,17 @@ test('should setup set end date by date', () => {
 
 
 // test SORT_BY_DATE filter object
-test('should setup sort by date', function(assert) {
-
+test('should setup sort by date', () => {
+    const action = sortByDate();
+    expect(action).toEqual({
+        type: 'SORT_BY_DATE'
+    })
 });
 
 // test SORT_BY_AMOUNT filter object
-test('should setup sort by amount', function(assert) {
-
+test('should setup sort by amount', () => {
+    const action = sortByAmount();
+    expect(action).toEqual({
+        type: 'SORT_BY_AMOUNT'
+    })
 });
