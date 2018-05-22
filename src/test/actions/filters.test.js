@@ -11,10 +11,30 @@ test('should be filter by text', () => {
 });
 
 // test START_DATE filter object
-test('should setup set date by date', () => {
+test('should setup set start date by date', () => {
     const action = setStartDate(moment(0));
     expect(action).toEqual({
         type: 'SET_START_DATE',
         startDate: moment(0)
     })
+});
+
+// test SET_END_DATE filter object
+test('should setup set end date by date', () => {
+    const action = setEndDate(moment(0));
+    expect(action).toEqual({
+        type: 'SET_END_DATE',
+        endDate: moment(0)
+    })
+});
+
+
+// test SORT_BY_DATE filter object
+test('should setup sort by date', function(assert) {
+
+});
+
+// test SORT_BY_AMOUNT filter object
+test('should setup sort by amount', function(assert) {
+
 });
