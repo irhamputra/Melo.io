@@ -9,7 +9,7 @@
     "build": "webpack",
     "dev-server": "webpack-dev-server",
     "start": "webpack-dev-server",
-    "test": "jest"
+    "test": "NODE_ENV=test jest"
   },
   "dependencies": {
     "babel-cli": "^6.26.0",
@@ -19,8 +19,9 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
+    "babel-jest": "^22.4.3",
     "css-loader": "^0.28.11",
-    "jest": "^22.4.4",
+    "jest": "^22.0.0",
     "live-server": "^1.2.0",
     "moment": "^2.22.1",
     "node-sass": "^4.7.2",
@@ -41,5 +42,8 @@
     "webpack": "^4.1.1",
     "webpack-cli": "^2.0.12",
     "webpack-dev-server": "^3.1.1"
+  },
+  "engines": {
+    "node": "^9.0.0"
   }
 }
