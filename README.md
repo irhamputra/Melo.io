@@ -2,6 +2,6 @@
 <br/>
 
 
-<p align="center">Creating your financial data without a tears.
+<p align="center">Creating your financial data without a tears.</p>
 
-demo is coming soon!</p>
+<p align="center">demo is coming soon!</p>
