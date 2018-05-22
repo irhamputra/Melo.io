@@ -3,7 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import { connect } from 'react-redux';
 import ExpenseForm from './ExpenseForm';
-import { editExpense } from "../actions/expenses";
+import { editExpense, removeExpense } from "../actions/expenses";
 
 class EditExpensePage extends Component {
     constructor(props){
@@ -23,6 +23,10 @@ class EditExpensePage extends Component {
                         this.props.history.push('/')
                     }}
                 />
+                <button onClick={() => {
+                    this.props.dispatch(removeExpense({ id: this.props.expenses.id}));
+                    this.props.history.push('/')
+                }}>Remove</button>
                 <Footer/>
             </div>
         )
