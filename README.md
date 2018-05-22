@@ -1,4 +1,7 @@
-# Melo.io
-Create your financial data without a tears 📝
+<h1 align="center">Melo.io 📝💶</h1>
+<br/>
 
-demo is coming soon!
+
+<p align="center">Creating your financial data without a tears.
+
+demo is coming soon!</p>
