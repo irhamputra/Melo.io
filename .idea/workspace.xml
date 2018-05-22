@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37069378-141c-406c-82d3-9c8a466fcb08" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -78,7 +77,9 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor />
+              <first_editor relative-caret-position="90">
+                <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              </first_editor>
               <second_editor />
             </state>
           </provider>
@@ -348,7 +349,7 @@
       <workItem from="1523021409733" duration="2938000" />
       <workItem from="1523877747581" duration="28674000" />
       <workItem from="1524505424923" duration="8592000" />
-      <workItem from="1526892034239" duration="34200000" />
+      <workItem from="1526892034239" duration="34450000" />
     </task>
     <task id="LOCAL-00001" summary="filtering by date and amount">
       <created>1526905920787</created>
@@ -462,11 +463,25 @@
       <option name="project" value="LOCAL" />
       <updated>1526986396827</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="initial commit">
+      <created>1526986661576</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1526986661576</updated>
+    </task>
+    <task id="LOCAL-00018" summary="initial commit">
+      <created>1526986699845</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1526986699845</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106377000" />
+    <option name="totallyTimeSpent" value="106627000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -526,7 +541,6 @@
     <MESSAGE value="Add form" />
     <MESSAGE value="handle value form" />
     <MESSAGE value="error handling and submit the data" />
-    <MESSAGE value="initial commit" />
     <MESSAGE value="handle submit data" />
     <MESSAGE value="handling edit data" />
     <MESSAGE value="wrapping up all features: filtering with date picker, refactoring selectors filter &amp; class based components, dispatch remove action, connect to redux dev tools" />
@@ -537,7 +551,8 @@
     <MESSAGE value="jest pkg" />
     <MESSAGE value="babel-jet &amp; jest dependencies and setup .babelrc for jest" />
     <MESSAGE value="babel-jest &amp; jest dependencies and setup .babelrc &amp; jest.config.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="babel-jest &amp; jest dependencies and setup .babelrc &amp; jest.config.json" />
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -859,7 +874,9 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor />
+          <first_editor relative-caret-position="90">
+            <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          </first_editor>
           <second_editor />
         </state>
       </provider>
