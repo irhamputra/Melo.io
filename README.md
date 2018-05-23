@@ -1,5 +1,4 @@
-<div align="center">![logo](https://user-images.githubusercontent.com/22166728/40418819-aa33ad08-5e83-11e8-9c10-95893247de7c.png)
-</div>
+![logo](https://user-images.githubusercontent.com/22166728/40418819-aa33ad08-5e83-11e8-9c10-95893247de7c.png)
 
 <h1 align="center">Melo.io 📝💶</h1>
 <br/>
