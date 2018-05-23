@@ -44,3 +44,14 @@ test('should sort by date', () => {
     const res = selectors(seed, filters);
     expect(res).toEqual([seed[2], seed[0]])
 });
+
+test('should sort by end date', () => {
+    const filters = {
+        text: '',
+        sortBy: 'date',
+        startDate: undefined,
+        endDate: moment(0)
+    };
+    const res = selectors(seed, filters);
+    expect(res).toEqual([seed[0], seed[1]])
+});
