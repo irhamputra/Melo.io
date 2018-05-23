@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37069378-141c-406c-82d3-9c8a466fcb08" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/actions/selectors.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/actions/filters.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/actions/filters.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/actions/selectors.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/actions/selectors.test.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,7 +28,7 @@
     <splitter split-orientation="horizontal" split-proportion="0.4770477">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="filters.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="filters.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/actions/filters.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="255">
@@ -47,32 +46,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="configStore.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/store/configStore.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
-                  <folding>
-                    <element signature="e#0#53#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="filters.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/reducers/filters.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-126">
-                  <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="expenses.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="expenses.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/selectors/expenses.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+                <state relative-caret-position="210">
+                  <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
                 </state>
               </provider>
             </entry>
@@ -99,11 +77,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="filters.test.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="filters.test.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/actions/filters.test.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="309">
-                  <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+                <state relative-caret-position="-224">
+                  <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
                   <folding>
                     <element signature="e#0#104#0" expanded="true" />
                   </folding>
@@ -111,9 +89,16 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="selectors.test.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="selectors.test.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/actions/selectors.test.js">
-              <provider selected="true" editor-type-id="text-editor" />
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="267">
+                  <caret line="45" column="3" lean-forward="true" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
+                  <folding>
+                    <element signature="e#0#49#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
             </entry>
           </file>
         </leaf>
@@ -184,8 +169,8 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/test/actions/expenses.test.js" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/test/actions/selectors.test.js" />
         <option value="$PROJECT_DIR$/src/test/actions/filters.test.js" />
+        <option value="$PROJECT_DIR$/src/test/actions/selectors.test.js" />
       </list>
     </option>
   </component>
@@ -271,7 +256,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.should setup sort by amount">
+  <component name="RunManager" selected="Jest.should sort by date">
+    <configuration name="should filter by text value" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/test/actions/selectors.test.js" />
+      <test-names>
+        <test-name value="should filter by text value" />
+      </test-names>
+    </configuration>
     <configuration name="should setup add expense with default value" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -281,28 +277,6 @@
       <test-file value="$PROJECT_DIR$/src/test/actions/expenses.test.js" />
       <test-names>
         <test-name value="should setup add expense with default value" />
-      </test-names>
-    </configuration>
-    <configuration name="should setup add expense with seed value" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/test/actions/expenses.test.js" />
-      <test-names>
-        <test-name value="should setup add expense with seed value" />
-      </test-names>
-    </configuration>
-    <configuration name="should setup set end date by date" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/test/actions/filters.test.js" />
-      <test-names>
-        <test-name value="should setup set end date by date" />
       </test-names>
     </configuration>
     <configuration name="should setup sort by amount" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
@@ -325,6 +299,17 @@
       <test-file value="$PROJECT_DIR$/src/test/actions/filters.test.js" />
       <test-names>
         <test-name value="should setup sort by date" />
+      </test-names>
+    </configuration>
+    <configuration name="should sort by date" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/test/actions/selectors.test.js" />
+      <test-names>
+        <test-name value="should sort by date" />
       </test-names>
     </configuration>
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
@@ -384,18 +369,18 @@
     </configuration>
     <list>
       <item itemvalue="Jest.should setup sort by date" />
-      <item itemvalue="Jest.should setup set end date by date" />
-      <item itemvalue="Jest.should setup add expense with seed value" />
       <item itemvalue="Jest.should setup add expense with default value" />
       <item itemvalue="Jest.should setup sort by amount" />
+      <item itemvalue="Jest.should filter by text value" />
+      <item itemvalue="Jest.should sort by date" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.should sort by date" />
+        <item itemvalue="Jest.should filter by text value" />
         <item itemvalue="Jest.should setup sort by amount" />
         <item itemvalue="Jest.should setup sort by date" />
         <item itemvalue="Jest.should setup add expense with default value" />
-        <item itemvalue="Jest.should setup add expense with seed value" />
-        <item itemvalue="Jest.should setup set end date by date" />
       </list>
     </recent_temporary>
   </component>
@@ -418,7 +403,7 @@
       <workItem from="1523021409733" duration="2938000" />
       <workItem from="1523877747581" duration="28674000" />
       <workItem from="1524505424923" duration="8592000" />
-      <workItem from="1526892034239" duration="41085000" />
+      <workItem from="1526892034239" duration="44316000" />
     </task>
     <task id="LOCAL-00001" summary="filtering by date and amount">
       <created>1526905920787</created>
@@ -616,43 +601,57 @@
       <option name="project" value="LOCAL" />
       <updated>1526990072716</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="test filter action object done and pass!">
+      <created>1527011740747</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1527011740747</updated>
+    </task>
+    <task id="LOCAL-00030" summary="test selectors filter by text value">
+      <created>1527012444109</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1527012444109</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="should_setup_edit_expense_action_object - 2018.05.22 at 15h 03m 03s.xml">
-      <configuration name="should setup edit expense action object" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="should_setup_remove_expense_action_object - 2018.05.22 at 15h 03m 08s.xml">
-      <configuration name="should setup remove expense action object" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="should_setup_sort_by_date - 2018.05.22 at 15h 03m 23s.xml">
-      <configuration name="should setup sort by date" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="should_setup_set_end_date_by_date - 2018.05.22 at 15h 03m 35s.xml">
-      <configuration name="should setup set end date by date" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="should_setup_add_expense_with_seed_value - 2018.05.22 at 15h 03m 51s.xml">
-      <configuration name="should setup add expense with seed value" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="should_setup_add_expense_with_default_value - 2018.05.22 at 15h 03m 59s.xml">
-      <configuration name="should setup add expense with default value" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="should_setup_add_expense_with_default_value - 2018.05.22 at 15h 04m 16s.xml">
-      <configuration name="should setup add expense with default value" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="should_setup_sort_by_date - 2018.05.22 at 19h 54m 41s.xml">
-      <configuration name="should setup sort by date" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="should_setup_sort_by_date - 2018.05.22 at 19h 55m 01s.xml">
-      <configuration name="should setup sort by date" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="should_setup_sort_by_amount - 2018.05.22 at 19h 55m 05s.xml">
       <configuration name="should setup sort by amount" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="should_filter_by_text_value - 2018.05.22 at 20h 03m 54s.xml">
+      <configuration name="should filter by text value" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="should_filter_by_text_value - 2018.05.22 at 20h 04m 42s.xml">
+      <configuration name="should filter by text value" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="should_filter_by_text_value - 2018.05.22 at 20h 06m 03s.xml">
+      <configuration name="should filter by text value" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="should_filter_by_text_value - 2018.05.22 at 20h 06m 09s.xml">
+      <configuration name="should filter by text value" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="should_sort_by_date - 2018.05.23 at 09h 09m 00s.xml">
+      <configuration name="should sort by date" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="should_sort_by_date - 2018.05.23 at 09h 09m 19s.xml">
+      <configuration name="should sort by date" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="should_sort_by_date - 2018.05.23 at 09h 09m 32s.xml">
+      <configuration name="should sort by date" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="should_sort_by_date - 2018.05.23 at 09h 11m 22s.xml">
+      <configuration name="should sort by date" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="should_sort_by_date - 2018.05.23 at 09h 11m 59s.xml">
+      <configuration name="should sort by date" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113262000" />
+    <option name="totallyTimeSpent" value="116493000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -671,7 +670,7 @@
       <window_info anchor="right" id="JWT" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50323623" side_tool="true" weight="0.38474295" />
       <window_info anchor="bottom" id="NativeScript" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.23961662" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3546326" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49838188" weight="0.3283582" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49676377" weight="0.2028754" />
       <window_info anchor="bottom" id="RNConsole" order="9" />
@@ -682,7 +681,7 @@
       <window_info anchor="right" id="JSON Utils" />
       <window_info anchor="right" id="Nativescript Palette" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38977635" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="GhcMod" order="13" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
@@ -727,7 +726,9 @@
     <MESSAGE value="test SET_START_DATE and TEXT_FILTER filter object" />
     <MESSAGE value="edit readme" />
     <MESSAGE value="test SET_END_DATE, SORT_BY_AMOUNT &amp; SORT_BY_DATE filter object" />
-    <option name="LAST_COMMIT_MESSAGE" value="test SET_END_DATE, SORT_BY_AMOUNT &amp; SORT_BY_DATE filter object" />
+    <MESSAGE value="test filter action object done and pass!" />
+    <MESSAGE value="test selectors filter by text value" />
+    <option name="LAST_COMMIT_MESSAGE" value="test selectors filter by text value" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1025,16 +1026,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/actions/selectors.test.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/selectors/expenses.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/actions/expenses.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1049,13 +1040,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/filters.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/jest-jasmine2/build/queue_runner.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
@@ -1063,12 +1047,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/filters.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/selectors/expenses.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/actions/filters.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+        <state relative-caret-position="-224">
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
           <folding>
             <element signature="e#0#104#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/actions/selectors.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="45" column="3" lean-forward="true" selection-start-line="45" selection-start-column="3" selection-end-line="45" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>

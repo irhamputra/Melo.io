@@ -1,4 +1,5 @@
 import selectors from '../../selectors/expenses';
+import moment from 'moment';
 
 const seed = [{
     id: '1',
@@ -11,13 +12,13 @@ const seed = [{
     description: 'Internet',
     note: '',
     amount: 400,
-    createdAt: -11110000
+    createdAt: moment(0).subtract(3, 'days').valueOf()
 }, {
     id: '3',
     description: 'Spotify',
     note: '',
     amount: 100,
-    createdAt: 100000
+    createdAt: moment(0).add(5, 'days').valueOf()
 }];
 
 // test selectors by set text value
@@ -30,4 +31,16 @@ test('should filter by text value', () => {
     };
     const res = selectors(seed, filters);
     expect(res).toEqual([seed[0], seed[1]])
+});
+
+test('should sort by date', () => {
+    const filters = {
+        text: '',
+        sortBy: 'date',
+        startDate: moment(0),
+        endDate: undefined
+    };
+
+    const res = selectors(seed, filters);
+    expect(res).toEqual([seed[2], seed[0]])
 });
