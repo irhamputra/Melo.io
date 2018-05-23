@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37069378-141c-406c-82d3-9c8a466fcb08" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -124,32 +124,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/webpack.config.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="228">
-                  <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/README.md">
-              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SPLIT">
-                  <first_editor>
-                    <caret column="127" selection-start-column="127" selection-end-column="127" />
-                  </first_editor>
-                  <second_editor />
+                <state relative-caret-position="104">
+                  <caret line="36" column="18" lean-forward="true" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
                 </state>
               </provider>
             </entry>
@@ -230,9 +209,9 @@
         <option value="$PROJECT_DIR$/src/test/reducers/expenses.test.js" />
         <option value="$PROJECT_DIR$/src/app.js" />
         <option value="$PROJECT_DIR$/package.json" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
       </list>
     </option>
   </component>
@@ -502,7 +481,7 @@
       <workItem from="1523021409733" duration="2938000" />
       <workItem from="1523877747581" duration="28674000" />
       <workItem from="1524505424923" duration="8592000" />
-      <workItem from="1526892034239" duration="55397000" />
+      <workItem from="1526892034239" duration="56143000" />
     </task>
     <task id="LOCAL-00001" summary="filtering by date and amount">
       <created>1526905920787</created>
@@ -819,7 +798,21 @@
       <option name="project" value="LOCAL" />
       <updated>1527071009806</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="update readme">
+      <created>1527071172764</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1527071172764</updated>
+    </task>
+    <task id="LOCAL-00047" summary="update readme">
+      <created>1527071236601</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1527071236601</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -855,7 +848,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="127574000" />
+    <option name="totallyTimeSpent" value="128320000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -876,11 +869,11 @@
       <window_info anchor="bottom" id="NativeScript" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.34664536" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49838188" weight="0.3283582" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49676377" visible="true" weight="0.399361" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49676377" visible="true" weight="0.399361" />
       <window_info anchor="bottom" id="RNConsole" order="9" />
       <window_info anchor="right" id="JSON Viewer" />
       <window_info anchor="bottom" id="TypeScript" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15577507" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15577507" />
       <window_info anchor="bottom" id="Docker" />
       <window_info anchor="right" id="JSON Utils" />
       <window_info anchor="right" id="Nativescript Palette" />
@@ -944,7 +937,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/component/AddOption.js" />
     <entry file="file://$PROJECT_DIR$/src/styles/component/_modal.scss" />
     <entry file="file://$PROJECT_DIR$/src/styles/component/_option.scss" />
     <entry file="file://$PROJECT_DIR$/src/styles/component/_addoption.scss" />
@@ -1281,13 +1273,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/expenses.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
@@ -1295,20 +1280,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor>
-            <caret column="127" selection-start-column="127" selection-end-column="127" />
+          <first_editor relative-caret-position="15">
+            <caret line="1" column="113" selection-start-line="1" selection-start-column="113" selection-end-line="1" selection-end-column="113" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/styles.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="36" column="18" lean-forward="true" selection-start-line="36" selection-start-column="18" selection-end-line="36" selection-end-column="18" />
         </state>
       </provider>
     </entry>
