@@ -49,7 +49,7 @@
           <file leaf-file-name="filters.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/reducers/filters.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
+                <state relative-caret-position="-53">
                   <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
                 </state>
               </provider>
@@ -89,8 +89,8 @@
           <file leaf-file-name="filters.test.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/reducers/filters.test.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+                <state relative-caret-position="272">
+                  <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
                   <folding>
                     <element signature="e#0#28#0" expanded="true" />
                   </folding>
@@ -293,8 +293,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.should sort by date (1)">
-    <configuration name="should setup filter values" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.should set by endDate">
+    <configuration name="should set by endDate" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$" />
@@ -302,7 +302,18 @@
       <scope-kind value="TEST" />
       <test-file value="$PROJECT_DIR$/src/test/reducers/filters.test.js" />
       <test-names>
-        <test-name value="should setup filter values" />
+        <test-name value="should set by endDate" />
+      </test-names>
+    </configuration>
+    <configuration name="should set by startDate" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/test/reducers/filters.test.js" />
+      <test-names>
+        <test-name value="should set by startDate" />
       </test-names>
     </configuration>
     <configuration name="should sort by amount" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
@@ -327,26 +338,15 @@
         <test-name value="should sort by date" />
       </test-names>
     </configuration>
-    <configuration name="should sort by end date" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
+    <configuration name="should sort by text" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/test/actions/selectors.test.js" />
+      <test-file value="$PROJECT_DIR$/src/test/reducers/filters.test.js" />
       <test-names>
-        <test-name value="should sort by end date" />
-      </test-names>
-    </configuration>
-    <configuration name="should sort by start and end date" type="JavaScriptTestRunnerJest" factoryName="Jest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/test/actions/selectors.test.js" />
-      <test-names>
-        <test-name value="should sort by start and end date" />
+        <test-name value="should sort by text" />
       </test-names>
     </configuration>
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
@@ -405,19 +405,19 @@
       <envs />
     </configuration>
     <list>
-      <item itemvalue="Jest.should sort by end date" />
-      <item itemvalue="Jest.should sort by start and end date" />
-      <item itemvalue="Jest.should setup filter values" />
       <item itemvalue="Jest.should sort by amount" />
       <item itemvalue="Jest.should sort by date (1)" />
+      <item itemvalue="Jest.should sort by text" />
+      <item itemvalue="Jest.should set by startDate" />
+      <item itemvalue="Jest.should set by endDate" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.should set by endDate" />
+        <item itemvalue="Jest.should set by startDate" />
+        <item itemvalue="Jest.should sort by text" />
         <item itemvalue="Jest.should sort by date (1)" />
         <item itemvalue="Jest.should sort by amount" />
-        <item itemvalue="Jest.should setup filter values" />
-        <item itemvalue="Jest.should sort by start and end date" />
-        <item itemvalue="Jest.should sort by end date" />
       </list>
     </recent_temporary>
   </component>
@@ -440,7 +440,7 @@
       <workItem from="1523021409733" duration="2938000" />
       <workItem from="1523877747581" duration="28674000" />
       <workItem from="1524505424923" duration="8592000" />
-      <workItem from="1526892034239" duration="47787000" />
+      <workItem from="1526892034239" duration="48619000" />
     </task>
     <task id="LOCAL-00001" summary="filtering by date and amount">
       <created>1526905920787</created>
@@ -687,31 +687,24 @@
       <option name="project" value="LOCAL" />
       <updated>1527062410578</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="test SORT_BY_DATE and SORT_BY_AMOUNT filter reducer object">
+      <created>1527063177215</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1527063177215</updated>
+    </task>
+    <task id="LOCAL-00037" summary="test SET_TEXT_FILTER filter reducer">
+      <created>1527063578159</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1527063578159</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="should_sort_by_start_and_end_date - 2018.05.23 at 09h 35m 02s.xml">
-      <configuration name="should sort by start and end date" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="should_sort_by_start_and_end_date - 2018.05.23 at 09h 35m 19s.xml">
-      <configuration name="should sort by start and end date" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="should_sort_by_start_and_end_date - 2018.05.23 at 09h 36m 01s.xml">
-      <configuration name="should sort by start and end date" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="should_sort_by_start_and_end_date - 2018.05.23 at 09h 36m 49s.xml">
-      <configuration name="should sort by start and end date" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="should_sort_by_start_and_end_date - 2018.05.23 at 09h 37m 02s.xml">
-      <configuration name="should sort by start and end date" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="should_sort_by_start_and_end_date - 2018.05.23 at 09h 39m 16s.xml">
-      <configuration name="should sort by start and end date" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="should_sort_by_start_and_end_date - 2018.05.23 at 09h 39m 56s.xml">
-      <configuration name="should sort by start and end date" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="should_sort_by_start_and_end_date - 2018.05.23 at 09h 40m 35s.xml">
       <configuration name="should sort by start and end date" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
@@ -721,9 +714,30 @@
     <history-entry file="should_setup_filter_values - 2018.05.23 at 09h 58m 34s.xml">
       <configuration name="should setup filter values" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="should_sort_by_amount - 2018.05.23 at 10h 11m 26s.xml">
+      <configuration name="should sort by amount" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="should_sort_by_date_(1) - 2018.05.23 at 10h 12m 24s.xml">
+      <configuration name="should sort by date (1)" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="should_sort_by_text - 2018.05.23 at 10h 16m 12s.xml">
+      <configuration name="should sort by text" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="should_sort_by_text - 2018.05.23 at 10h 18m 54s.xml">
+      <configuration name="should sort by text" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="should_sort_by_text - 2018.05.23 at 10h 19m 09s.xml">
+      <configuration name="should sort by text" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="should_set_by_startDate - 2018.05.23 at 10h 21m 49s.xml">
+      <configuration name="should set by startDate" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="should_set_by_endDate - 2018.05.23 at 10h 23m 52s.xml">
+      <configuration name="should set by endDate" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119964000" />
+    <option name="totallyTimeSpent" value="120796000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -742,18 +756,18 @@
       <window_info anchor="right" id="JWT" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50323623" side_tool="true" weight="0.38474295" />
       <window_info anchor="bottom" id="NativeScript" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34664536" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34664536" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49838188" weight="0.3283582" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49676377" weight="0.34664536" />
       <window_info anchor="bottom" id="RNConsole" order="9" />
       <window_info anchor="right" id="JSON Viewer" />
       <window_info anchor="bottom" id="TypeScript" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15577507" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15577507" />
       <window_info anchor="bottom" id="Docker" />
       <window_info anchor="right" id="JSON Utils" />
       <window_info anchor="right" id="Nativescript Palette" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.38977635" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38977635" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="GhcMod" order="13" />
       <window_info anchor="bottom" id="DB Execution Console" order="7" />
@@ -779,8 +793,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add form" />
-    <MESSAGE value="handle value form" />
     <MESSAGE value="error handling and submit the data" />
     <MESSAGE value="handle submit data" />
     <MESSAGE value="handling edit data" />
@@ -804,11 +816,13 @@
     <MESSAGE value="test from startDate to endDate pass" />
     <MESSAGE value="moving seeds" />
     <MESSAGE value="test filter reducers" />
-    <option name="LAST_COMMIT_MESSAGE" value="test filter reducers" />
+    <MESSAGE value="test SORT_BY_DATE and SORT_BY_AMOUNT filter reducer object" />
+    <MESSAGE value="test SET_TEXT_FILTER filter reducer" />
+    <option name="LAST_COMMIT_MESSAGE" value="test SET_TEXT_FILTER filter reducer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="2" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -1157,15 +1171,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/reducers/filters.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="-53">
           <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/reducers/filters.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        <state relative-caret-position="272">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
