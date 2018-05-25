@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37069378-141c-406c-82d3-9c8a466fcb08" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/firebase/firebase.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/expenses.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/expenses.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/AddExpensePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddExpensePage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/configStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/configStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -382,28 +376,7 @@
       <workItem from="1523021409733" duration="2938000" />
       <workItem from="1523877747581" duration="28674000" />
       <workItem from="1524505424923" duration="8592000" />
-      <workItem from="1526892034239" duration="82559000" />
-    </task>
-    <task id="LOCAL-00004" summary="error handling and submit the data">
-      <created>1526930156785</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1526930156785</updated>
-    </task>
-    <task id="LOCAL-00005" summary="initial commit">
-      <created>1526930178733</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1526930178733</updated>
-    </task>
-    <task id="LOCAL-00006" summary="handle submit data">
-      <created>1526930912088</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1526930912088</updated>
+      <workItem from="1526892034239" duration="82834000" />
     </task>
     <task id="LOCAL-00007" summary="handling edit data">
       <created>1526932613745</created>
@@ -727,7 +700,28 @@
       <option name="project" value="LOCAL" />
       <updated>1527156018833</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="add redux-thunk middleware, firebase database, dotenv, cross-env">
+      <created>1527253043776</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1527253043777</updated>
+    </task>
+    <task id="LOCAL-00054" summary="NODE_ENV test and development, webpack plugin for connecting firebase">
+      <created>1527253121141</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1527253121141</updated>
+    </task>
+    <task id="LOCAL-00055" summary="add database, refactoring and add dispatch startAddExpense">
+      <created>1527253193211</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1527253193211</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -763,7 +757,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154736000" />
+    <option name="totallyTimeSpent" value="155011000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -818,9 +812,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="babel-jet &amp; jest dependencies and setup .babelrc for jest" />
-    <MESSAGE value="babel-jest &amp; jest dependencies and setup .babelrc &amp; jest.config.json" />
-    <MESSAGE value="initial commit" />
     <MESSAGE value="test add expense action object value" />
     <MESSAGE value="test SET_START_DATE and TEXT_FILTER filter object" />
     <MESSAGE value="edit readme" />
@@ -843,7 +834,10 @@
     <MESSAGE value="load sourceMap for development tools" />
     <MESSAGE value="update readme" />
     <MESSAGE value="total summary invoices feature and rendering" />
-    <option name="LAST_COMMIT_MESSAGE" value="total summary invoices feature and rendering" />
+    <MESSAGE value="add redux-thunk middleware, firebase database, dotenv, cross-env" />
+    <MESSAGE value="NODE_ENV test and development, webpack plugin for connecting firebase" />
+    <MESSAGE value="add database, refactoring and add dispatch startAddExpense" />
+    <option name="LAST_COMMIT_MESSAGE" value="add database, refactoring and add dispatch startAddExpense" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
