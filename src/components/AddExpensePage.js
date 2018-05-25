@@ -3,7 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import ExpenseForm from './ExpenseForm';
 import { connect } from 'react-redux';
-import { addExpense } from "../actions/expenses";
+import { startAddExpense } from "../actions/expenses";
 
 class AddExpensePage extends Component {
     constructor(props){
@@ -16,8 +16,8 @@ class AddExpensePage extends Component {
                 <Header/>
                 <h1>Create an Invoice</h1>
                 <ExpenseForm
-                    onSubmit={(expense) => {
-                        this.props.dispatch(addExpense(expense));
+                    onSubmit={(expenses) => {
+                        this.props.dispatch(startAddExpense(expenses));
                         this.props.history.push('/')
                     }}
                 />
@@ -26,5 +26,6 @@ class AddExpensePage extends Component {
         )
     }
 }
+
 
 export default connect()(AddExpensePage)
