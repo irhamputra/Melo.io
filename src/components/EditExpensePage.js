@@ -3,7 +3,7 @@ import Header from './Header';
 import Footer from './Footer';
 import { connect } from 'react-redux';
 import ExpenseForm from './ExpenseForm';
-import { editExpense, removeExpense } from "../actions/expenses";
+import { startEditExpense, startRemoveExpense} from "../actions/expenses";
 
 class EditExpensePage extends Component {
     constructor(props){
@@ -19,12 +19,12 @@ class EditExpensePage extends Component {
                 <ExpenseForm
                     expense={this.props.expenses}
                     onSubmit={(expense) => {
-                        this.props.dispatch(editExpense(this.props.expenses.id, expense));
+                        this.props.dispatch(startEditExpense(this.props.expenses.id, expense));
                         this.props.history.push('/')
                     }}
                 />
                 <button onClick={() => {
-                    this.props.dispatch(removeExpense({ id: this.props.expenses.id}));
+                    this.props.dispatch(startRemoveExpense({ id: this.props.expenses.id }));
                     this.props.history.push('/')
                 }}>Remove</button>
                 <Footer/>
