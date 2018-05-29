@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+import { startLogout } from "../actions/auth";
+import { connect } from 'react-redux';
 
-export default class Header extends Component {
+class Header extends Component {
+    constructor(props) {
+        super(props);
+    }
+
     render(){
         return(
             <div>
@@ -9,7 +15,12 @@ export default class Header extends Component {
                 <NavLink exact={true} to="/">Dashboard</NavLink>
                 <NavLink to="/create">Create an Invoice</NavLink>
                 <NavLink to="/help">Help</NavLink>
+                <button onClick={() => {
+                    this.props.dispatch(startLogout())
+                }}>Log Out</button>
             </div>
         )
     }
 }
+
+export default connect()(Header);
