@@ -10,7 +10,7 @@ const ExpensesSummary = ({ expenseCount, expensesTotal }) => {
 
     return (
         <div>
-            <h3>View Total {expenseCount} {expense}, {format}</h3>
+            <h2>View Total {expenseCount} {expense}, {format}</h2>
         </div>
     )
 };
