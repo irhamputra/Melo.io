@@ -7,9 +7,9 @@ import selectExpenses from '../selectors/expenses';
 const ExpenseList = (props) => (
     <div>
         <h1>Invoice Report List</h1>
-        {props.expenses.map((expense) => {
+        {props.expenses.length ? props.expenses.map((expense) => {
             return <ExpenseListItem key={expense.id} {...expense}/>
-        })}
+        }) : <div>Please wait! We currently get your data from database...</div>}
     </div>
 );
 
